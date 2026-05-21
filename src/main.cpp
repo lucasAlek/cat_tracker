@@ -1,9 +1,7 @@
 #include <Arduino.h>
 #include <WiFi.h>
 #include <HTTPClient.h>
-
-const char* ssid = "BELL487";
-const char* password = "C6E7335AFC99";
+#include "secrets.h" // contains ssid and password - excluded from git
 
 const char* scriptURL = "https://script.google.com/macros/s/AKfycbxnjRpXuyTHRHWxDqlg31IhDuTAXuqRe3JgoftoDtAKj4Bco2iKGJ2_MavsBy9bxoxj/exec";
 
