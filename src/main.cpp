@@ -11,9 +11,9 @@ const int greenPin = 12;
 const int bluePin = 14;
 
 // Motion filtering and timing values
-const unsigned long motionHoldMillis = 12000; // keep green active long enough for the cat
+const unsigned long motionHoldMillis = 45000; // keep green active long enough for the cat (45 seconds to complete and leave)
 const unsigned long motionCheckInterval = 200; // sample PIR every 200 ms
-const int motionStableThreshold = 4; // require several HIGH readings before confirming motion
+const int motionStableThreshold = 5; // require several HIGH readings before confirming motion
 
 int consecutiveHighReadings = 0; // stable motion sample counter
 bool motionActive = false; // whether motion is currently considered active
